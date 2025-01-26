@@ -16,8 +16,8 @@ const About = () => {
           transition={{ duration: 0.5 }}
           className="w-full lg:w-1/2 lg:p-8"
         >
-          <div className="flex items-start justify-center overflow-hidden h-128">
-            <img className="rounded-xl object-top" src={aboutImg} alt="about"></img>
+          <div className="flex items-start justify-center overflow-hidden h-128 rounded-xl ">
+            <img className="object-top" src={aboutImg} alt="about"></img>
           </div>
         </motion.div>
         <motion.div
