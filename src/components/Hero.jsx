@@ -1,6 +1,7 @@
 import { HERO_CONTENT } from "../constants";
 import profilePic from "../assets/johnPark.JPG";
 import { motion } from "framer-motion";
+import Button from "../components/Button";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -37,6 +38,13 @@ const Hero = () => {
             >
               {HERO_CONTENT}
             </motion.p>
+            <motion.div
+              variants={container(1.5)}
+              initial="hidden"
+              animate="visible"
+            >
+              <Button />
+            </motion.div>
           </div>
         </div>
         <div className="w-full lg:w-1/2 lg:p-8">
