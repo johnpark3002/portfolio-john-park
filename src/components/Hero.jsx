@@ -42,7 +42,7 @@ const Hero = () => {
               variants={container(1.5)}
               initial="hidden"
               animate="visible"
-              className="mb-20"
+              className="mb-10"
             >
               <Button />
             </motion.div>
