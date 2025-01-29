@@ -25,21 +25,38 @@ export const PROJECTS = [
     image: LeagueOfLegends,
     description:
       "A machine learning model using Python and Scikit-learn to predict the outcome of League of Legends eSports matches with a precision of over 90%.",
-    technologies: ["Python", "Jupyter Notebook", "Pandas", "Scikit Learn", "Random Forest Classifier"],
+    technologies: [
+      "Python",
+      "Jupyter Notebook",
+      "Pandas",
+      "Scikit Learn",
+      "Random Forest Classifier",
+    ],
   },
   {
     title: "Budget Management Application",
     image: BudgetApp,
     description:
       "A web application to streamline budget management. Implemented features to optimize user experience and ensure efficient data storage.",
-    technologies: ["React.js", "Spring", "Microsoft SQL Server", "KendoReact UI", "Java"],
+    technologies: [
+      "React.js",
+      "Spring",
+      "Microsoft SQL Server",
+      "KendoReact UI",
+      "Java",
+    ],
   },
   {
     title: "Vision-guided Navigation Assistance for the Visually Impaired",
     image: iPhoneApp,
     description:
       "A smart navigation system for the visually impaired, leveraging a YOLO-based model to detect bus shelters. The solution provided audio and haptic feedback through a mobile app.",
-    technologies: ["Python", "TensorFlow", "YOLO Image Classification", "Swift"],
+    technologies: [
+      "Python",
+      "TensorFlow",
+      "YOLO Image Classification",
+      "Swift",
+    ],
   },
   {
     title: "PourDecisions",
@@ -53,7 +70,16 @@ export const PROJECTS = [
     image: LibraryApp,
     description:
       "A library system allowing users to search and borrow books. Integrated a responsive interface and a robust backend to manage users and data.",
-    technologies: ["Java", "Spring", "Vue.js", "Android Studio", "PostgreSQL", "HTML", "CSS", "JavaScript"],
+    technologies: [
+      "Java",
+      "Spring",
+      "Vue.js",
+      "Android Studio",
+      "PostgreSQL",
+      "HTML",
+      "CSS",
+      "JavaScript",
+    ],
   },
   {
     title: "Autonomous Robot",
