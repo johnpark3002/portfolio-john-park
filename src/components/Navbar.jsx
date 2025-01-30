@@ -1,5 +1,6 @@
 import logo from "../assets/johnParkLogo.png";
 import { FaLinkedin, FaGithub } from "react-icons/fa";
+import ToggleButton from "../components/ToggleButton";
 
 const Navbar = () => {
   return (
@@ -8,6 +9,7 @@ const Navbar = () => {
         <img className="mx-2 w-20" src={logo} alt="logo"></img>
       </div>
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
+        <ToggleButton></ToggleButton>
         <a
           href="https://linkedin.com/in/john-park-106a72223"
           target="_blank"

@@ -1,7 +1,10 @@
-import { CONTACT } from "../constants";
+import { CONTACT, CONTACT_TITLE } from "../constants";
 import { motion } from "framer-motion";
+import { useLanguage } from "../languageContext";
 
 const Contact = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="border-b border-neutral-900 pb-20">
       <motion.h2
@@ -10,7 +13,7 @@ const Contact = () => {
         transition={{ duration: 0.5 }}
         className="my-10 text-center text-4xl"
       >
-        Get in Touch
+        {CONTACT_TITLE[language]}
       </motion.h2>
       <div className="text-center tracking-tighter">
         {/* <motion.p
@@ -29,7 +32,10 @@ const Contact = () => {
         >
           {CONTACT.phoneNo}
         </motion.p> */}
-        <a href={`mailto:${CONTACT.email}?subject=Greetings`} className="border-b">
+        <a
+          href={`mailto:${CONTACT.email}?subject=Greetings`}
+          className="border-b"
+        >
           {CONTACT.email}
         </a>
       </div>

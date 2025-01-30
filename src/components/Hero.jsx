@@ -1,7 +1,8 @@
-import { HERO_CONTENT } from "../constants";
+import { HERO_CONTENT, HERO_TITLE } from "../constants";
 import profilePic from "../assets/johnPark.JPG";
 import { motion } from "framer-motion";
 import Button from "../components/Button";
+import { useLanguage } from "../languageContext";
 
 const container = (delay) => ({
   hidden: { x: -100, opacity: 0 },
@@ -9,6 +10,8 @@ const container = (delay) => ({
 });
 
 const Hero = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="border-b border-neutral-900 pb-4 lg:mb-35">
       <div className="flex flex-wrap">
@@ -28,7 +31,7 @@ const Hero = () => {
               animate="visible"
               className="bg-gradient-to-r from-pink-300 via-slate-500 to-purple-500 bg-clip-text text-3xl tracking-tight text-transparent"
             >
-              Aspiring Software Engineer
+              {HERO_TITLE[language]}
             </motion.span>
             <motion.p
               variants={container(1)}
@@ -36,7 +39,7 @@ const Hero = () => {
               animate="visible"
               className="my-2 max-w-xl py-6 font-light tracking-tighter"
             >
-              {HERO_CONTENT}
+              {HERO_CONTENT[language]}
             </motion.p>
             <motion.div
               variants={container(1.5)}

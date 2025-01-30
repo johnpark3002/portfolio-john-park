@@ -1,7 +1,10 @@
-import { PROJECTS } from "../constants";
+import { PROJECTS, PROJECTS_TITLE } from "../constants";
 import { motion } from "framer-motion";
+import { useLanguage } from "../languageContext";
 
 const Projects = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -10,10 +13,10 @@ const Projects = () => {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
-        Projects
+        {PROJECTS_TITLE[language]}
       </motion.h2>
       <div>
-        {PROJECTS.map((project, index) => (
+        {PROJECTS[language].projects.map((project, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}

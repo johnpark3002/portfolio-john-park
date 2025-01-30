@@ -1,7 +1,10 @@
-import { EXPERIENCES } from "../constants";
+import { EXPERIENCES, EXPERIENCE_TITLE } from "../constants";
 import { motion } from "framer-motion";
+import { useLanguage } from "../languageContext";
 
 const Experience = () => {
+  const { language } = useLanguage();
+
   return (
     <div className="border-b border-neutral-900 pb-4">
       <motion.h2
@@ -10,10 +13,10 @@ const Experience = () => {
         transition={{ duration: 0.5 }}
         className="my-20 text-center text-4xl"
       >
-        Experience
+        {EXPERIENCE_TITLE[language]}
       </motion.h2>
       <div>
-        {EXPERIENCES.map((experience, index) => (
+        {EXPERIENCES[language].experience.map((experience, index) => (
           <div key={index} className="mb-8 flex flex-wrap lg:justify-center">
             <motion.div
               whileInView={{ opacity: 1, x: 0 }}
