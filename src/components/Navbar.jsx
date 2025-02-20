@@ -11,7 +11,7 @@ const Navbar = () => {
       <div className="m-8 flex items-center justify-center gap-4 text-2xl">
         <ToggleButton></ToggleButton>
         <a
-          href="https://linkedin.com/in/john-park-106a72223"
+          href="https://linkedin.com/in/john-park-dev"
           target="_blank"
           rel="noopener noreferrer"
         >
